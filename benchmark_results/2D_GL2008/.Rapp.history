@@ -1,0 +1,25 @@
+load("/Users/tom/Dropbox/Modeling/GP_share_code/benchmark_results/2D_GL2008/2D_GL2008_SpaceFill.rds")
+res <- readRDS("/Users/tom/Dropbox/Modeling/GP_share_code/benchmark_results/2D_GL2008/2D_GL2008_SpaceFill.rds")
+names(res)
+names(res$Dlist)
+names(res$D_list)
+res$D_list
+length(res$D_list)
+res$D_list[[100-8]]
+res$D_list[[100-8-18]]
+MaxPro_82 <- res$D_list[[100-8-18]]
+write.csv(MaxPro_82[,2:3], "lala.csv")
+load("/Users/tom/Dropbox/Modeling/GP_share_code/benchmark_results/2D_GL2008/2D_GL2008_AL.rds")
+AL <- readRDS("/Users/tom/Dropbox/Modeling/GP_share_code/benchmark_results/2D_GL2008/2D_GL2008_AL.rds")
+names(AL)
+names(AL$D)
+AL$D
+Dim(AL$D)
+dim(AL$D)
+write.csv(AL$D[,3:4], "ALG1.csv")
+load("/Users/tom/Dropbox/Modeling/GP_share_code/benchmark_results/2D_GL2008/2D_GL2008_SpaceFill.rds")
+res <- readRDS("/Users/tom/Dropbox/Modeling/GP_share_code/benchmark_results/2D_GL2008/2D_GL2008_SpaceFill.rds")
+MaxPro_82 <- res$D_list[[100-8-40]]
+MaxPro_60 <- res$D_list[[100-8-40]]
+MaxPro_60
+write.csv(MaxPro_60[,2:3], "lala.csv")
